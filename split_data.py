@@ -3,17 +3,17 @@ import shutil
 import xml.etree.ElementTree as ET
 
 # path to xml-file
-train_xml_path = "C:/Users/Aarohi Sudumbrekar/Desktop/dl_project-1/svt1/test.xml"
-# path to image folder
-image_folder_path = "C:/Users/Aarohi Sudumbrekar/Desktop/dl_project-1/svt1/img"
-# output folder for the train/test images
-output_folder_path = "C:/Users/Aarohi Sudumbrekar/Desktop/dl_project-1/svt1/test"
+train_xml_path = "dl_project-1/svt1/test.xml"
 
-# create the output folder
+image_folder_path = "dl_project-1/svt1/img"
+# output folder for the train/test images
+output_folder_path = "dl_project-1/svt1/test"
+
+
 if not os.path.exists(output_folder_path):
     os.mkdir(output_folder_path)
 
-# parse the xml file
+
 tree = ET.parse(train_xml_path)
 root = tree.getroot()
 
